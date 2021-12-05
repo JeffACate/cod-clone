@@ -2,12 +2,27 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --panel-width-initial: 25%;
+    --panel-width-hover: 40%;
+    --panel-width-exta: 20%;
+    --panel-width: var(--panel-width-initial);
+}
 .panel {
     display: flex;
     float:left;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: var(--panel-width-exta);
+    height: 100vh;
+}
+.panel:hover {
+    display: flex;
+    float:left;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    width: var(--panel-width-hover);
     height: 100vh;
 }
 #p1{
